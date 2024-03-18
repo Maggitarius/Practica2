@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище LibraryDatabaseModelContainer" CdmEntityContainer="LibraryDatabaseEntities">
+    <EntitySetMapping Name="Authors">
+      <EntityTypeMapping TypeName="LibraryDatabaseModel.Authors">
+        <MappingFragment StoreEntitySet="Authors">
+          <ScalarProperty Name="ID_Author" ColumnName="ID_Author" />
+          <ScalarProperty Name="AuthorSurname" ColumnName="AuthorSurname" />
+          <ScalarProperty Name="AuthorName" ColumnName="AuthorName" />
+          <ScalarProperty Name="AuthorMiddlename" ColumnName="AuthorMiddlename" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="DeathDates" ColumnName="DeathDates" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="LibraryDatabaseModel.Books">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="ID_Book" ColumnName="ID_Book" />
+          <ScalarProperty Name="BookTittle" ColumnName="BookTittle" />
+          <ScalarProperty Name="GenreOfbOOK" ColumnName="GenreOfbOOK" />
+          <ScalarProperty Name="PublicationYear" ColumnName="PublicationYear" />
+          <ScalarProperty Name="AvailabilityOfBook" ColumnName="AvailabilityOfBook" />
+          <ScalarProperty Name="Author_ID" ColumnName="Author_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
